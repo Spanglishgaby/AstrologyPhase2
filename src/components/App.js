@@ -1,12 +1,13 @@
 import React from 'react';
-import Header from './Header'
+import HeaderPage from './HeaderPage'
 import PageContainer from './PageContainer';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import 'semantic-ui-css/semantic.min.css'
+import { BrowserRouter as Router} from 'react-router-dom';
 
 function App() {
   return (
     <Router>
-      <Header /> 
+      <HeaderPage /> 
       <PageContainer/>
     </Router>
   );

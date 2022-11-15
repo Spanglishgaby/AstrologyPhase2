@@ -1,6 +1,5 @@
 import Navbar from "./Navbar";
-
-function Header (){
+function HeaderPage (){
     return (
         <header className="header">
             {/* <img src="../background.jpg" className="background" /> */}
@@ -10,4 +9,4 @@ function Header (){
     )
 
 }
-export default Header;
+export default HeaderPage;

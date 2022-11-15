@@ -1,5 +1,5 @@
 {
-  "sun sign": [
+  "sunsign": [
     {
       "id": 1,
       "sign": "Aries",
@@ -34,7 +34,7 @@
       "id": 4,
       "sign": "Cancer",
       "symbol": "The Crab:Possesing an impenetrable exterior covering soft flesh underneath. At the first sign of danger, it withdraws into its shell and scuttles back to the sea, where it feels safe.",
-      "planet":"The Moon: Earth's one satellite. In Astrology, the moon governs emotion and intuitive behavior",
+      "planet": "The Moon: Earth's one satellite. In Astrology, the moon governs emotion and intuitive behavior",
       "luckyDay": "Monday",
       "color": "Sea Green and silver:The shimmering color of the water and the moon.",
       "flower": "Larkspur and Acanthus",
@@ -44,7 +44,7 @@
       "id": 5,
       "sign": "Leo",
       "symbol": "The Crab:Possesing an impenetrable exterior covering soft flesh underneath. At the first sign of danger, it withdraws into its shell and scuttles back to the sea, where it feels safe.",
-      "planet":"The Moon: Earth's one satellite. In Astrology, the moon governs emotion and intuitive behavior",
+      "planet": "The Moon: Earth's one satellite. In Astrology, the moon governs emotion and intuitive behavior",
       "luckyDay": "Monday",
       "color": "Sea Green and silver:The shimmering color of the water and the moon.",
       "flower": "Larkspur and Acanthus",
@@ -54,7 +54,7 @@
       "id": 6,
       "sign": "Virgo",
       "symbol": "The Virgin:Representing purity of motive, modesty, industriousness, and service of oneself and ones's talents toward helping others.",
-      "planet":"Mercury:Ancient god of communication and commerce, rules intelligence and reason.",
+      "planet": "Mercury:Ancient god of communication and commerce, rules intelligence and reason.",
       "luckyDay": "Wednesday",
       "color": "Navy Blue and Gray: classic colors of refinement and taste.",
       "flower": "Morning glory and Pansy",
@@ -64,17 +64,17 @@
       "id": 7,
       "sign": "Libra",
       "symbol": "The Scales: Signifying balance, equilibrium, order, and justice",
-      "planet":"Venus: Goddess of love and beauty, rules pleasure, social pursuits, art, and adornment.",
+      "planet": "Venus: Goddess of love and beauty, rules pleasure, social pursuits, art, and adornment.",
       "luckyDay": "Friday",
       "color": "Blue and Lavander: the colors of romance, harmony, and refinement",
       "flower": "Rose, Cosmos, and Hydrangea",
       "animal": "Snakes and Lizards"
     },
-    {  
+    {
       "id": 8,
       "sign": "Scorpio",
       "symbol": "The Scorpion: A secretive, deadly creature that can poison its enemies. Its sting is often fatal.",
-      "planet":" Pluto: Ancient god of the netherworld and of the dead.",
+      "planet": " Pluto: Ancient god of the netherworld and of the dead.",
       "luckyDay": "Tuesday",
       "color": "Crimon, Burgundy, Maroon",
       "flower": "Chrysanthemum and Rhododendron",
@@ -84,17 +84,17 @@
       "id": 9,
       "sign": "Sagittarius",
       "symbol": "The Archer: Representing directness, high aims, a love of outdoors activity and the chase",
-      "planet":"Jupiter: The most important Roman god, ruler of heavens. Jupiter is the planet of good fortune, optimism, expansion, abundance.",
+      "planet": "Jupiter: The most important Roman god, ruler of heavens. Jupiter is the planet of good fortune, optimism, expansion, abundance.",
       "luckyDay": "Thursday",
       "color": "Purple: Uncommon color of royalty and the artistic",
-      "flower":"Narcissus, Holly, and Dandelion",
-      "animal":"Horse"
+      "flower": "Narcissus, Holly, and Dandelion",
+      "animal": "Horse"
     },
     {
       "id": 10,
       "sign": "Capricorn",
       "symbol": "The Goat: A surefooted animal who is able to ascend the heights by taking advantage of every foothold. The goat butts its way through obstructions.",
-      "planet":"Saturn: represent obstacles, limitation, restriction, discipline, responsibility.",
+      "planet": "Saturn: represent obstacles, limitation, restriction, discipline, responsibility.",
       "luckyDay": "Saturday",
       "color": "Dark Green and Brown: Classic, comforting colors of nature, and true love",
       "flower": "Carnation and Ivy",
@@ -104,22 +104,21 @@
       "id": 11,
       "sign": "Aquarius",
       "symbol": "The Water Bearer: Dispensing a gift that flows freely and equally to all; representing creation and the giving of life. The water that the Water Bearer pours out symbolizes truth, which you freely give out to the world ",
-      "planet":"Uranus: Ancient Greek sky god, the first ruler of the universe. It was the first modern planet to be discovered(in 1781). In astrology, Uranus is the planet of change, disruption, the unconventional, and the unexpected. It rules invention, aerodynamics, and modern science.",
+      "planet": "Uranus: Ancient Greek sky god, the first ruler of the universe. It was the first modern planet to be discovered(in 1781). In astrology, Uranus is the planet of change, disruption, the unconventional, and the unexpected. It rules invention, aerodynamics, and modern science.",
       "luckyDay": "Wednesday",
       "color": "Electric blue: The clear color of the sky.",
       "flower": "Orchid",
       "animal": "Large birds"
-    } ,
+    },
     {
       "id": 12,
       "sign": "Pisces",
       "symbol": "Two fishes tied to one another and swimming in opposite directions",
-      "planet":"Neptune: Ancient god of the sea",
+      "planet": "Neptune: Ancient god of the sea",
       "luckyDay": "Friday",
       "color": "Pale green and turquoise",
       "flower": "Water Lily, White Poppy, Jonquil",
       "animal": "Fish"
-
     }
   ],
   "Reviews": [
@@ -146,12 +145,13 @@
       "name": "Betty",
       "review": "Def recommend this page!!!",
       "date": "Nov. 14"
+    },
+    {
+      "reviews": "fssfsg",
+      "id": 5
     }
   ],
-
   "profile": {
     "name": "typicode"
   }
-
-  
 }

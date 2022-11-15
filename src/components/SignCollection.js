@@ -1,9 +1,16 @@
 import SignCard from "./SignCard";
 
-function SignCollection (){
+function SignCollection ({sunSign}){
+
+    const renderSign= sunSign.map((signData)=>{
+        return(
+            <SignCard key ={signData.id} signData = {signData}/>
+        )
+    })
+
     return (
         <div>
-            <SignCard/>collection
+          {renderSign}
         </div>
     )
 
