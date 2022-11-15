@@ -7,12 +7,10 @@ function SignCard ({signData}){
     // let cardImage = require(signData.image)
     const handleShowDetail=()=>{
         setShowDetail(!showDetail)
-    }
-    
+    } 
     return (
-    <div>
+    <>
       {showDetail ? (
-        <div>
           <Card onClick={handleShowDetail}>
             <Card.Content >
                 <Card.Header>{signData.sign}</Card.Header>
@@ -25,9 +23,8 @@ function SignCard ({signData}){
                 </Card.Description>
             </Card.Content>
           </Card>
-        </div>
+       
         ):(
-        <div>  
           <Card>
             <Image onClick={handleShowDetail} src={require(`../images/${signData.sign.toLowerCase()}.png`)}  />
             <Card.Content>
@@ -45,11 +42,9 @@ function SignCard ({signData}){
             22 Friends
             </a>
             </Card.Content>
-          </Card>
-        </div>) 
+          </Card>) 
       } 
-    </div>
-  
+    </>
    )    
  }
    

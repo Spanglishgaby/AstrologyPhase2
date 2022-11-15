@@ -10,11 +10,11 @@ function SignCollection ({sunSign}){
     })
 
     return (
-        <div>
+       
          <Card.Group itemsPerRow={4}>
           {renderSign}
           </Card.Group>
-        </div>
+      
     )
 
 }
