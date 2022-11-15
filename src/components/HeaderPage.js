@@ -4,7 +4,7 @@ function HeaderPage (){
         <header className="header">
             {/* <img src="../background.jpg" className="background" /> */}
             Header testing
-           <Navbar/> 
+          
         </header>
     )
 

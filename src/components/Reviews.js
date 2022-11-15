@@ -1,17 +1,21 @@
 import {useState} from "react";
+import { Button, Comment, Form } from 'semantic-ui-react'
 
-function Reviews ({review, addReview}){
+function Reviews ({reviews, addReview}){
 
+//   const showreviews= reviews.map(reviewData => (
+//                 return ( <li>{reviewData.review}</li>)
+//               ))
+      
     const [text, setText] = useState("")
     
     const handleInput = e =>{
         setText(e.target.value)    
     }
 
-    
     const renderReview =()=>{
       const newReview = {
-        reviews: text
+        review: text
       }
       fetch ('http://localhost:3001/Reviews',{
           method: 'POST',
@@ -22,7 +26,6 @@ function Reviews ({review, addReview}){
           })
         .then ( r => r.json())
         .then ( addReview (newReview))
-
     }
 
     return (

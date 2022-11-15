@@ -8,7 +8,8 @@
       "luckyDay": "Tuesday",
       "color": "Red: the color of fire and excitement",
       "flower": "Geranium, Sweet Pea",
-      "animal": "Sheep, and especially, rams."
+      "animal": "Sheep, and especially, rams.",
+      "image": "../images/aries.png"
     },
     {
       "id": 2,
@@ -18,7 +19,8 @@
       "luckyDay": "Friday",
       "color": "Pale blue and mauve",
       "flower": "Violet and poppy",
-      "animal": "Cattle"
+      "animal": "Cattle",
+      "image": "../images/taurus.png"
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "luckyDay": "Wednesday",
       "color": "Yellow: bright and luminous, the color of novelty",
       "flower": "Lily and Lavander",
-      "animal": "Brightly colored birds and butterflies"
+      "animal": "Brightly colored birds and butterflies",
+      "image": "../images/gemini.png"
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "luckyDay": "Monday",
       "color": "Sea Green and silver:The shimmering color of the water and the moon.",
       "flower": "Larkspur and Acanthus",
-      "animal": "Those with shell coverings"
+      "animal": "Those with shell coverings",
+      "image": "../images/cancer.png"
     },
     {
       "id": 5,
@@ -48,7 +52,8 @@
       "luckyDay": "Monday",
       "color": "Sea Green and silver:The shimmering color of the water and the moon.",
       "flower": "Larkspur and Acanthus",
-      "animal": "Those with shell coverings"
+      "animal": "Those with shell coverings",
+      "image": "../images/leo.png"
     },
     {
       "id": 6,
@@ -58,7 +63,8 @@
       "luckyDay": "Wednesday",
       "color": "Navy Blue and Gray: classic colors of refinement and taste.",
       "flower": "Morning glory and Pansy",
-      "animal": "Small domestic pets"
+      "animal": "Small domestic pets",
+      "image": "../images/virgo.png"
     },
     {
       "id": 7,
@@ -68,7 +74,8 @@
       "luckyDay": "Friday",
       "color": "Blue and Lavander: the colors of romance, harmony, and refinement",
       "flower": "Rose, Cosmos, and Hydrangea",
-      "animal": "Snakes and Lizards"
+      "animal": "Snakes and Lizards",
+      "image": "../images/libra.png"
     },
     {
       "id": 8,
@@ -78,7 +85,8 @@
       "luckyDay": "Tuesday",
       "color": "Crimon, Burgundy, Maroon",
       "flower": "Chrysanthemum and Rhododendron",
-      "animal": "Insects and crustaceans"
+      "animal": "Insects and crustaceans",
+      "image": "../images/scorpio.png"
     },
     {
       "id": 9,
@@ -88,7 +96,8 @@
       "luckyDay": "Thursday",
       "color": "Purple: Uncommon color of royalty and the artistic",
       "flower": "Narcissus, Holly, and Dandelion",
-      "animal": "Horse"
+      "animal": "Horse",
+      "image": "../images/sagittarius.png"
     },
     {
       "id": 10,
@@ -98,7 +107,8 @@
       "luckyDay": "Saturday",
       "color": "Dark Green and Brown: Classic, comforting colors of nature, and true love",
       "flower": "Carnation and Ivy",
-      "animal": "Goats and animals with cloven hoofs"
+      "animal": "Goats and animals with cloven hoofs",
+      "image": "../images/capricorn.png"
     },
     {
       "id": 11,
@@ -108,7 +118,8 @@
       "luckyDay": "Wednesday",
       "color": "Electric blue: The clear color of the sky.",
       "flower": "Orchid",
-      "animal": "Large birds"
+      "animal": "Large birds",
+      "image": "../images/aquarius.png"
     },
     {
       "id": 12,
@@ -118,7 +129,8 @@
       "luckyDay": "Friday",
       "color": "Pale green and turquoise",
       "flower": "Water Lily, White Poppy, Jonquil",
-      "animal": "Fish"
+      "animal": "Fish",
+      "image": "../images/pisces.png"
     }
   ],
   "Reviews": [
@@ -147,11 +159,24 @@
       "date": "Nov. 14"
     },
     {
-      "reviews": "fssfsg",
+      "review": "fssfsg",
       "id": 5
+    },
+    {
+      "review": "ddsddd",
+      "id": 6
+    },
+    {
+      "review": "tertete",
+      "id": 7
+    },
+    {
+      "review": "fgdfgdf",
+      "id": 8
     }
   ],
-  "profile": {
-    "name": "typicode"
+  "Horoscope": {
+    "Today": "The transit of planets indicates that you should exercise caution when making financial decisions. Try to get professional advice. There may be opportunities to obtain financial assistance from in-laws. However, the transit of Rahu and Sun indicates that you would not make easy money and suffer financial loss due to a wrong decision. Many of you who are planning to enrol in research-related subjects would be successful due to the transit of Mercury and Venus. Students may achieve success if they take a foreign language course or learn new skills. Before making a presentation, professionals should work on their projects and do proper research and study. Short-distance travel is needed for your work, and a significant deal would be finalised this month. Because of the unfavourable planet passage, health should be prioritised. There is a good chance that you would not be able to get a good night's sleep."
+
   }
 }

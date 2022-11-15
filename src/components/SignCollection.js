@@ -1,4 +1,5 @@
 import SignCard from "./SignCard";
+import { Card, Button, Dimmer, Header, Image} from 'semantic-ui-react'
 
 function SignCollection ({sunSign}){
 
@@ -10,7 +11,9 @@ function SignCollection ({sunSign}){
 
     return (
         <div>
+         <Card.Group itemsPerRow={4}>
           {renderSign}
+          </Card.Group>
         </div>
     )
 
