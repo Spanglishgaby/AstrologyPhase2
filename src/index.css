@@ -8,18 +8,108 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
-  background-image: linear-gradient(45deg, rgb(114, 103, 191), rgb(127, 135, 226),  rgb(221, 138, 232), rgb(217, 143, 213), rgb(179, 117, 226), rgb(112, 135, 226));
+  /* background-image: linear-gradient(45deg, rgb(114, 103, 191), rgb(127, 135, 226),  rgb(221, 138, 232), rgb(217, 143, 213), rgb(179, 117, 226), rgb(112, 135, 226)); */
   /* border : 20px red solid; */
   /* overflow: hidden; */
+  min-height: 100vh;
+  background-color: rgb(127, 135, 226);
+  background-image:
+  radial-gradient(closest-side, rgba(121, 82, 221,1),rgba(121, 82, 221, 0)),
+  radial-gradient(closest-side, rgba(224, 127, 226,1),rgba(224, 127, 226, 0)),
+  radial-gradient(closest-side, rgba(127, 96, 229,1), rgba(74, 87, 227, 0)),
+  radial-gradient(closest-side, rgba(222, 156, 219, 1),rgba(222, 156, 219, 0)),
+  radial-gradient(closest-side, rgba(73, 66, 116, 1),rgba(73, 66, 116, 0));
+  background-size:
+  130vmax 130vmax,
+  80vmax 80vmax,
+  90vmax 90vmax,
+  110vmax 110vmax,
+  90vmax 90vmax;
+  background-position:
+  -80vmax -80vmax,
+  60vmax -30vmax,
+  10vmax 10vmax,
+  -30vmax -10vmax,
+  50vmax 50vmax;
+  background-repeat: no-repeat;
+  animation: movement 8s linear infinite;
+}
+body::after{
+  content: "";
+  display: block;
+  position : fixed;
   width: 100%;
-  height: 100vh;
-  
+  height: 100%;
+  top : 0;
+  left: 0;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  z-index: -1;
 }
 
+@keyframes movement{
+  0%, 100%{
+    background-size:
+    130vmax 130vmax,
+    80vmax 80vmax,
+    90vmax 90vmax,
+    110vmax 110vmax,
+    90vmax 90vmax;
+    background-position:
+    -80vmax -80vmax,
+    60vmax -30vmax,
+    10vmax 10vmax,
+    -30vmax -10vmax,
+    50vmax 50vmax;
+  }
+  25%{
+    background-size:
+    100vmax 100vmax,
+    90vmax 90vmax,
+    100vmax 100vmax,
+    90vmax 90vmax,
+    60vmax 60vmax;
+    background-position:
+    -60vmax -90vmax,
+    50vmax -40vmax,
+    0vmax -20vmax,
+    -40vmax -20vmax,
+    40vmax 60vmax;
+  }
+  50%{
+    background-size:
+    80vmax 80vmax,
+    110vmax 110vmax,
+    80vmax 80vmax,
+    60vmax 60vmax,
+    80vmax 80vmax;
+    background-position:
+    -50vmax -70vmax,
+    40vmax -30vmax,
+    10vmax 0vmax,
+    20vmax 10vmax,
+    30vmax 70vmax;
+  }
+  75%{
+    background-size:
+    90vmax 90vmax,
+    90vmax 90vmax,
+    100vmax 100vmax,
+    90vmax 90vmax,
+    70vmax 70vmax;
+    background-position:
+    -50vmax -40vmax,
+    50vmax -30vmax,
+    20vmax 0vmax,
+    -10vmax 10vmax,
+    40vmax 60vmax;
+  }
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 .background {
   min-width: 800px;
   margin: 0;
@@ -28,15 +118,67 @@ code {
   display: relative;
   z-index: -1;
 }
+
 .navbar {
   /* border : 2px red solid; */
-  grid-area: navnar;
+  grid-area: navbar;
   display: grid;
-  grid-template-columns: repeat(5,auto);
+  grid-template-columns: repeat(5, auto);
   align-items: center;
   justify-items: center;
-  background-color: whitesmoke;
-  padding: 40px;
-  color: black;
-  font-style: none;
+  background-color: white;
+  padding: 25px;
 }
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+#loginBtn{
+  background: linear-gradient(90deg, rgb(114, 103, 191), rgb(127, 135, 226),  rgb(221, 138, 232), rgb(217, 143, 213), rgb(179, 117, 226), rgb(114, 103, 191));
+  background-size: 200%;
+  border-radius: 20px;
+  width: 95px;
+  padding: 15px;
+  top: 0;
+  /* z-index: 1; */
+}
+/* 
+#loginBtn::before{
+  content: "";
+  position: absolute;
+  left: -10px;
+  right: -10px;
+  top: -10px;
+  bottom: -10px;
+  background: linear-gradient(90deg, rgb(69, 63, 110),  rgb(144, 64, 140), rgb(65, 49, 204), rgb(69, 63, 110));
+  background-size: 200%;
+  filter: blur(10px);
+  z-index: -1;
+  }
+  #loginBtn:hover::before{
+    animation: light 8s infinite;
+   }
+   #loginBtn:hover{
+   animation: light 8s infinite;
+  }
+
+  #loginBtn::before{
+  content: "";
+  position: absolute;
+  left: -10px;
+  right: -10px;
+  top: -10px;
+  bottom: -10px;
+  background: linear-gradient(90deg, rgb(69, 63, 110),  rgb(144, 64, 140), rgb(65, 49, 204), rgb(69, 63, 110));
+  background-size: 200%;
+  filter: blur(10px);
+  z-index: -1;
+  }
+
+  @keyframes light {
+    100%{
+      background-position:  -200% 0;
+    }
+  } */
