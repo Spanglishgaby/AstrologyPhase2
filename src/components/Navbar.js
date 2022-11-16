@@ -5,7 +5,7 @@ function Navbar (){
         <nav className="navbar">
             <Link to="/">Home</Link>
             <Link to="/sunsign">Sun Sign</Link>
-            <Link to="/about">About</Link>
+            <Link to="/horoscope">Horoscope</Link>
             <Link to="/compatibility">Compatibility</Link>
             <Link to="/reviews">Reviews</Link>
             {/* <button id="loginBtn" >LogIn</button> */}

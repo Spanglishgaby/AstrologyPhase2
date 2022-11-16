@@ -8,6 +8,7 @@ import SignCollection from "./SignCollection";
 import 'semantic-ui-css/semantic.min.css'
 import { Switch, Route} from 'react-router-dom';
 import Footer from './Footer';
+import Horoscope from './Horoscope';
 
 
 function App() {
@@ -43,9 +44,9 @@ function App() {
         <Route exact path = '/sunsign'>
           <SignCollection sunSign={sunSign} />
         </Route>
-        {/* <Route path = '/about'>
-          <About />
-        </Route> */}
+        <Route path = '/horoscope'>
+          <Horoscope />
+        </Route>
         <Route exact path = '/compatibility'>
           <SignForm />
         </Route>

@@ -1,10 +1,21 @@
-import { Card, Icon, Image, Button } from 'semantic-ui-react';
+import { Card, Icon, Image, Button, CardContent } from 'semantic-ui-react';
 import {useState} from "react";
+import { Link } from "react-router-dom"
 
 function SignCard ({signData}){
   // console.log(signData.image)
     const [showDetail, setShowDetail] = useState (false)
+
+    const [likes, setLike]= useState(signData.like)
+    
+    const handlelike =()=>{
+      setLike(likes + 1)
+    }
     // let cardImage = require(signData.image)
+
+    const toggleToday=()=>{
+      return  <Link to="/horoscope">horoscope</Link>
+    }
     const handleShowDetail=()=>{
         setShowDetail(!showDetail)
     }
@@ -28,25 +39,27 @@ function SignCard ({signData}){
           <Card>
             <Image onClick={handleShowDetail} src={require(`../images/${signData.sign.toLowerCase()}.png`)}  />
             <Card.Content>
-              <Card.Header>{signData.sign}</Card.Header>
+              <Card.Header textAlign='center'>{signData.sign}</Card.Header>
               {/* <Card.Meta>
                 <span className='date'>Joined in 2015</span>
               </Card.Meta> */}
               <Card.Description textAlign='center'>
               <p><b>Lucky Day:</b> {signData.luckyDay}</p>
-              
-              <b>Discover your Daily Horoscope</b>  
-              <Button color='violet' primary size='small' circular centered>
-                Click here!  
-                {/* <Icon name='star' /> */}
-              </Button>
               </Card.Description>
             </Card.Content>
+            <CardContent textAlign='center'>
+           
+              <Button color="violet"  size='small' circular centered>
+                <Link to="/horoscope">
+                 Check Out Your Daily Horoscope 
+                </Link>
+              </Button>
+            </CardContent>
             <Card.Content extra>
             {/* // make this like and count */}
-            <a>
-            <Icon name='like' /> 
-            22 Love it!
+            <a onClick={handlelike}>
+            <Icon name='like'/> 
+             {likes} Love it!
             </a>
             </Card.Content>
           </Card>)
