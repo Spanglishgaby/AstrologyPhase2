@@ -1,4 +1,4 @@
-import { Card, Icon, Image } from 'semantic-ui-react';
+import { Card, Icon, Image, Button } from 'semantic-ui-react';
 import {useState} from "react";
 
 function SignCard ({signData}){
@@ -15,11 +15,11 @@ function SignCard ({signData}){
             <Card.Content >
                 <Card.Header>{signData.sign}</Card.Header>
                 <Card.Description>
-                  <p>Symbol: {signData.symbol}</p>
-                  <p>Planet: {signData.planet}</p>
-                  <p>Luck Color: {signData.color}</p>
-                  <p>Flower: {signData.flower}</p>
-                  <p>Animal: {signData.animal}</p>
+                  <p><b>Symbol:</b> {signData.symbol}</p>
+                  <p><b>Planet:</b> {signData.planet}</p>
+                  <p><b>Color:</b> {signData.color}</p>
+                  <p><b>Flower:</b> {signData.flower}</p>
+                  <p><b>Animal:</b> {signData.animal}</p>
                 </Card.Description>
             </Card.Content>
           </Card>
@@ -32,14 +32,21 @@ function SignCard ({signData}){
               {/* <Card.Meta>
                 <span className='date'>Joined in 2015</span>
               </Card.Meta> */}
-              <Card.Description>
-              <p>Lucky Day: {signData.luckyDay}</p>
+              <Card.Description textAlign='center'>
+              <p><b>Lucky Day:</b> {signData.luckyDay}</p>
+              
+              <b>Discover your Daily Horoscope</b>  
+              <Button color='violet' primary size='small' circular centered>
+                Click here!  
+                {/* <Icon name='star' /> */}
+              </Button>
               </Card.Description>
             </Card.Content>
             <Card.Content extra>
+            {/* // make this like and count */}
             <a>
-            <Icon name='like' />
-            22 Friends
+            <Icon name='like' /> 
+            22 Love it!
             </a>
             </Card.Content>
           </Card>)

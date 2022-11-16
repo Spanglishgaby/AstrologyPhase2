@@ -135,6 +135,7 @@ function SignForm (){
 
     return (
         <div class="reviewSec">
+
         <Form onSubmit={handleClick}>
             <Form.Field>
                 <label>Enter your sunsign</label>
