@@ -9,7 +9,7 @@ function SignForm (){
     }
     return (
         <div class="reviewSec">
-        <Form>
+        <Form >
             <Form.Field>
                 <label>Enter your sunsign</label>
                 <select>

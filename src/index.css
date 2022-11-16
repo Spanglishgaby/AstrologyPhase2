@@ -32,7 +32,7 @@ body {
   -30vmax -10vmax,
   50vmax 50vmax;
   background-repeat: no-repeat;
-  animation: movement 8s linear infinite;
+  animation: movement 5s linear infinite;
 }
 body::after{
   content: "";
@@ -141,6 +141,7 @@ a{
   padding: 10px;
   max-width: 500px;
   min-height: 600PX;
+ 
   margin: 0 auto;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;

@@ -7,6 +7,7 @@ import SignForm from "./SignForm";
 import SignCollection from "./SignCollection";
 import 'semantic-ui-css/semantic.min.css'
 import { Switch, Route} from 'react-router-dom';
+import Footer from './Footer';
 
 
 function App() {
@@ -33,8 +34,12 @@ function App() {
   return (
     <div>
       <Navbar/>
-      <HeaderPage />
       <Switch>
+      <Route exact path = '/'>
+          <HeaderPage />
+          <SignCollection sunSign={sunSign} />
+        </Route>
+     
         <Route exact path = '/sunsign'>
           <SignCollection sunSign={sunSign} />
         </Route>
@@ -51,6 +56,7 @@ function App() {
           <h1> 404 not found</h1>
         </Route>
     </Switch>
+    <Footer/>
     </div>
 
   );

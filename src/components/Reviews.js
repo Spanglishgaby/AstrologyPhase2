@@ -1,44 +1,52 @@
 import {useState} from "react";
-import { Button, Comment, Form, Header } from 'semantic-ui-react'
+import { Button, Comment, Form, Header, Container} from 'semantic-ui-react'
 
 function Reviews ({reviews, addReview}){
 
     const showReviews = reviews.map(reviewData => {
         return (
-            // <div>
-            //     <p> {reviewData.name} </p>
-            //     <p> {reviewData.review} </p>
-            //     <p> {reviewData.date} </p>
-            // </div>
-
-            <Comment>
+            <Container >
+                <Comment >
             <Comment.Avatar src='https://react.semantic-ui.com/images/avatar/small/matt.jpg' />
             <Comment.Content>
             <Comment.Author as='a'>{reviewData.name}</Comment.Author>
             <Comment.Metadata>
                 <div>{reviewData.date}</div>
             </Comment.Metadata>
-            <Comment.Text>{reviewData.review}</Comment.Text>
+            <Comment.Text>{reviewData.review}
+            </Comment.Text>
             <Comment.Actions>
-                <Comment.Action>Reply</Comment.Action>
+                <Comment.Action></Comment.Action>
             </Comment.Actions>
             </Comment.Content>
             </Comment>
+            </Container>
+            
         )
     })
 
     const [text, setText] = useState("")
+    const [name, setName] = useState("")
+    const [Date, setDate] = useState("")
 
     const handleInput = e =>{
         setText(e.target.value)
-        console.log(e.target)
+       // console.log(e.target)
+    }
+    const handleInput2 = e =>{
+        setName(e.target.value)
+        //console.log(e.target)
+    }
+    const handleInput3 = e =>{
+        setDate(e.target.value)
+        //console.log(e.target)
     }
 
     const renderReview = () =>{
       const newReview = {
-        name : "fake name",
+        name : name,
         review: text,
-        date: "Nov. 16"
+        date: Date
       }
       fetch ('http://localhost:4000/Reviews',{
           method: 'POST',
@@ -53,14 +61,28 @@ function Reviews ({reviews, addReview}){
 
     return (
         <div class="reviewSec">
-            <Comment.Group>
-                <Header as="h2" dividing>
+            <Comment.Group style={{
+                marginTop: '30px',
+                marginBottom: '100px'
+            }}>
+                <Header color='yellow' as="h2" dividing >
                     WEBSITE REVIEWS
                 </Header>
                 <> {showReviews}</>
+              
                 <Form reply onSubmit={renderReview}>
+                    <Form.Field onChange={handleInput2}>
+                    <label>Name:</label>
+                    <input placeholder='First Name' />
+                    </Form.Field>
+                    <label>Date:</label>
+                    <input onChange={handleInput3} type="date" id="start" name="trip-start"
+                    value={Date}
+                    min="2022-01-01" max="2025-12-31">
+                    </input>
+                    <label>Comment:</label>
                     <Form.TextArea placeholder="Enter your review..." onChange = {handleInput}/>
-                    <Button content='Add Reply' labelPosition='left' icon='edit' primary />
+                    <Button color="violet" content='Add Review' labelPosition='left' icon='edit' primary />
                 </Form>
             </Comment.Group>
         </div>

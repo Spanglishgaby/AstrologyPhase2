@@ -12,7 +12,13 @@ function SignCollection ({sunSign}){
 
     return (
 
-         <Card.Group itemsPerRow={4}>
+         <Card.Group stackable itemsPerRow={4}
+         style={{
+            marginBottom:'100px',
+            marginTop:'50px',
+            marginRight:'50px',
+            marginLeft:'50px'
+         }}>
           {renderSign}
           </Card.Group>
 
