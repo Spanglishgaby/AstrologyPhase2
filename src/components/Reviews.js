@@ -1,21 +1,45 @@
 import {useState} from "react";
-import { Button, Comment, Form } from 'semantic-ui-react'
+// import { Button, Comment, Form } from 'semantic-ui-react'
 
 function Reviews ({reviews, addReview}){
 
-//   const showreviews= reviews.map(reviewData => (
-//                 return ( <li>{reviewData.review}</li>)
-//               ))
-      
+  const showReviews = reviews.map(reviewData => {
+                return (
+                    <div>
+                        <li> {reviewData.name} </li>
+                        <h3> {reviewData.review} </h3>
+                        <p> {reviewData.date} </p>
+                    </div>
+                    )
+                })
+
+// const renderSign= sunSign.map((signData)=>{
+//     return(
+//         <SignCard key ={signData.id} signData = {signData}/>
+//     )
+// })
+
+    // const showReviews=()=>{
+    //     return (
+    //         <ul>
+    //         {
+    //             reviews.map(reviewData => (<li>{reviewData.review}</li>))
+    //         }
+    //         </ul>
+    //    )
+    // }
+
     const [text, setText] = useState("")
-    
+
     const handleInput = e =>{
-        setText(e.target.value)    
+        setText(e.target.value)
     }
 
     const renderReview =()=>{
       const newReview = {
-        review: text
+        name : "fake name",
+        review: text,
+        date: "Nov. 16"
       }
       fetch ('http://localhost:3001/Reviews',{
           method: 'POST',
@@ -29,7 +53,8 @@ function Reviews ({reviews, addReview}){
     }
 
     return (
-        <div>
+        <div class="reviewSec">
+            <div id="showReview">{showReviews}</div>
             <form onSubmit={renderReview}>
             <textarea placeholder="Enter your review..." onChange = {handleInput}></textarea>
             <button value = "submit">Add a review</button>

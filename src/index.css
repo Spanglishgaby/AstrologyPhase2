@@ -135,10 +135,34 @@ a{
   text-decoration: none;
 }
 
+
+.reviewSec{
+  border:2px brown solid;
+  position: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  max-width: 450px;
+  min-height: 600PX;
+  margin-left: 35%;
+}
+
+#showReview{
+  border:2px brown solid;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 210px;
+  max-width: 350px;
+  overflow: hidden;
+}
+
+
 /* .signCard {
   border: 2px red solid;
 } */
-/* 
+/*
 #loginBtn{
   background: linear-gradient(90deg, rgb(114, 103, 191), rgb(127, 135, 226),  rgb(221, 138, 232), rgb(217, 143, 213), rgb(179, 117, 226), rgb(114, 103, 191));
   background-size: 200%;
@@ -148,7 +172,7 @@ a{
   top: 0;
   z-index: 1;
 } */
-/* 
+/*
 #loginBtn::before{
   content: "";
   position: absolute;
