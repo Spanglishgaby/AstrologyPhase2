@@ -1,3 +1,5 @@
+import React from 'react'
+import { Button, Checkbox, Form } from 'semantic-ui-react'
 function SignForm (){
 
 
@@ -6,10 +8,11 @@ function SignForm (){
         // console.log("submit")
     }
     return (
-        <div>
-            <form onClick={handleSubmit}>
-                <label> Enter your sunsign
-                    <select>
+        <div class="reviewSec">
+        <Form>
+            <Form.Field>
+                <label>Enter your sunsign</label>
+                <select>
                         <option>Aries</option>
                         <option>Taurus</option>
                         <option>Gemini</option>
@@ -23,9 +26,10 @@ function SignForm (){
                         <option>Aquarius</option>
                         <option>Pisces</option>
                     </select>
-                </label>
-                <label> Enter your partner's sign
-                    <select>
+            </Form.Field>
+            <Form.Field>
+                <label>Enter your partner's sign</label>
+                <select>
                         <option>Aries</option>
                         <option>Taurus</option>
                         <option>Gemini</option>
@@ -39,9 +43,9 @@ function SignForm (){
                         <option>Aquarius</option>
                         <option>Pisces</option>
                     </select>
-                </label>
-                <button value="submit"> Find your SoulMate! </button>
-           </form>
+            </Form.Field>
+            <Button type='submit'>Find your SoulMate!</Button>
+        </Form>
         </div>
     )
 

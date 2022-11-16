@@ -133,7 +133,7 @@
       "image": "../images/pisces.png"
     }
   ],
-  "Reviews": [
+  "reviews": [
     {
       "id": 1,
       "name": "Gabriela Arnott",
@@ -159,24 +159,13 @@
       "date": "Nov. 14"
     },
     {
-      "review": "fssfsg",
+      "name": "fake name",
+      "review": "how are you?\n",
+      "date": "Nov. 16",
       "id": 5
-    },
-    {
-      "review": "ddsddd",
-      "id": 6
-    },
-    {
-      "review": "tertete",
-      "id": 7
-    },
-    {
-      "review": "fgdfgdf",
-      "id": 8
     }
   ],
   "Horoscope": {
     "Today": "The transit of planets indicates that you should exercise caution when making financial decisions. Try to get professional advice. There may be opportunities to obtain financial assistance from in-laws. However, the transit of Rahu and Sun indicates that you would not make easy money and suffer financial loss due to a wrong decision. Many of you who are planning to enrol in research-related subjects would be successful due to the transit of Mercury and Venus. Students may achieve success if they take a foreign language course or learn new skills. Before making a presentation, professionals should work on their projects and do proper research and study. Short-distance travel is needed for your work, and a significant deal would be finalised this month. Because of the unfavourable planet passage, health should be prioritised. There is a good chance that you would not be able to get a good night's sleep."
-
   }
 }

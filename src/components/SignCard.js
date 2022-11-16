@@ -7,7 +7,7 @@ function SignCard ({signData}){
     // let cardImage = require(signData.image)
     const handleShowDetail=()=>{
         setShowDetail(!showDetail)
-    } 
+    }
     return (
     <>
       {showDetail ? (
@@ -23,7 +23,7 @@ function SignCard ({signData}){
                 </Card.Description>
             </Card.Content>
           </Card>
-       
+
         ):(
           <Card>
             <Image onClick={handleShowDetail} src={require(`../images/${signData.sign.toLowerCase()}.png`)}  />
@@ -33,7 +33,7 @@ function SignCard ({signData}){
                 <span className='date'>Joined in 2015</span>
               </Card.Meta> */}
               <Card.Description>
-              <p>Lucky Day: {signData.luckyDay}</p> 
+              <p>Lucky Day: {signData.luckyDay}</p>
               </Card.Description>
             </Card.Content>
             <Card.Content extra>
@@ -42,15 +42,15 @@ function SignCard ({signData}){
             22 Friends
             </a>
             </Card.Content>
-          </Card>) 
-      } 
+          </Card>)
+      }
     </>
-   )    
+   )
  }
-   
+
         // <div className="signCard">
         //     <img src="null" alt ="name" />
-        //     <p>{signData.sign}</p> 
+        //     <p>{signData.sign}</p>
         //     <div>
         //         <p>{signData.symbol}</p>
         //         <p>{signData.planet}</p>
@@ -60,7 +60,7 @@ function SignCard ({signData}){
         //         <p>{signData.animal}</p>
         //     </div>
         // </div>
-    
+
 
 
 export default SignCard;

@@ -1,47 +1,46 @@
 import {useState} from "react";
-// import { Button, Comment, Form } from 'semantic-ui-react'
+import { Button, Comment, Form, Header } from 'semantic-ui-react'
 
 function Reviews ({reviews, addReview}){
 
-  const showReviews = reviews.map(reviewData => {
-                return (
-                    <div>
-                        <li> {reviewData.name} </li>
-                        <h3> {reviewData.review} </h3>
-                        <p> {reviewData.date} </p>
-                    </div>
-                    )
-                })
+    const showReviews = reviews.map(reviewData => {
+        return (
+            // <div>
+            //     <p> {reviewData.name} </p>
+            //     <p> {reviewData.review} </p>
+            //     <p> {reviewData.date} </p>
+            // </div>
 
-// const renderSign= sunSign.map((signData)=>{
-//     return(
-//         <SignCard key ={signData.id} signData = {signData}/>
-//     )
-// })
-
-    // const showReviews=()=>{
-    //     return (
-    //         <ul>
-    //         {
-    //             reviews.map(reviewData => (<li>{reviewData.review}</li>))
-    //         }
-    //         </ul>
-    //    )
-    // }
+            <Comment>
+            <Comment.Avatar src='https://react.semantic-ui.com/images/avatar/small/matt.jpg' />
+            <Comment.Content>
+            <Comment.Author as='a'>{reviewData.name}</Comment.Author>
+            <Comment.Metadata>
+                <div>{reviewData.date}</div>
+            </Comment.Metadata>
+            <Comment.Text>{reviewData.review}</Comment.Text>
+            <Comment.Actions>
+                <Comment.Action>Reply</Comment.Action>
+            </Comment.Actions>
+            </Comment.Content>
+            </Comment>
+        )
+    })
 
     const [text, setText] = useState("")
 
     const handleInput = e =>{
         setText(e.target.value)
+        console.log(e.target)
     }
 
-    const renderReview =()=>{
+    const renderReview = () =>{
       const newReview = {
         name : "fake name",
         review: text,
         date: "Nov. 16"
       }
-      fetch ('http://localhost:3001/Reviews',{
+      fetch ('http://localhost:4000/Reviews',{
           method: 'POST',
           headers: {
          'Content-Type': 'application/json'
@@ -54,12 +53,26 @@ function Reviews ({reviews, addReview}){
 
     return (
         <div class="reviewSec">
-            <div id="showReview">{showReviews}</div>
-            <form onSubmit={renderReview}>
-            <textarea placeholder="Enter your review..." onChange = {handleInput}></textarea>
-            <button value = "submit">Add a review</button>
-            </form>
+            <Comment.Group>
+                <Header as="h2" dividing>
+                    WEBSITE REVIEWS
+                </Header>
+                <> {showReviews}</>
+                <Form reply onSubmit={renderReview}>
+                    <Form.TextArea placeholder="Enter your review..." onChange = {handleInput}/>
+                    <Button content='Add Reply' labelPosition='left' icon='edit' primary />
+                </Form>
+            </Comment.Group>
         </div>
+
+        // <div class="reviewSec">
+        //     <div id="showReview">{showReviews}</div>
+        //     {/* <div id="showReview"> HI</div> */}
+        //     <form onSubmit={renderReview}>
+        //     <textarea placeholder="Enter your review..." onChange = {handleInput}></textarea>
+        //     <button value = "submit">Add a review</button>
+        //     </form>
+        // </div>
     )
 
 }
