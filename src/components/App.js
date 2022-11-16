@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from './Navbar';
 import HeaderPage from './HeaderPage'
-import PageContainer from './PageContainer';
+// import PageContainer from './PageContainer';
 import Reviews from "./Reviews";
 import SignForm from "./SignForm";
 import SignCollection from "./SignCollection";
@@ -15,13 +15,13 @@ function App() {
   const [reviews, setReviews] = useState([])
   ////sunsign
   useEffect(() => {
-    fetch('http://localhost:3001/sunsign')
+    fetch('http://localhost:4000/sunsign')
       .then(r => r.json())
       .then(signData => setSunSign(signData))
   }, [])
 ////reviews
   useEffect(() => {
-    fetch('http://localhost:3001/Reviews')
+    fetch('http://localhost:4000/reviews')
       .then(r => r.json())
       .then(reviewData => setReviews(reviewData))
   }, [])
@@ -41,7 +41,7 @@ function App() {
         {/* <Route path = '/about'>
           <About />
         </Route> */}
-        <Route path = '/compatibilty'>
+        <Route exact path = '/compatibility'>
           <SignForm />
         </Route>
         <Route path = '/reviews'>
