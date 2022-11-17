@@ -15,15 +15,16 @@ function Footer() {
         <Grid divided inverted stackable>
           <Grid.Row>
             <Grid.Column width={4}>
-              <Header inverted as='h4' content='About' />
+              <Header inverted as='h4' content='Quick Links:' />
               <List link inverted>
-                <List.Item as='a'>Sitemap</List.Item>
-                <List.Item as='a'>Contact Us</List.Item>
-                <List.Item as='a'>Religious Ceremonies</List.Item>
-                <List.Item as='a'>Gazebo Plans</List.Item>
+                <List.Item as='a' href="/" >Home</List.Item>
+                <List.Item as='a' href="/sunsign">Sun Signs</List.Item>
+                <List.Item as='a' href="/horoscope">Horoscope</List.Item>
+                <List.Item as='a' href="/compatibility">Compatibility</List.Item>
+                <List.Item as='a' href="/reviews">Reviews</List.Item>
               </List>
             </Grid.Column>
-            <Grid.Column textAlign='center' width={7}>
+            <Grid.Column textAlign='center' width={7}> 
                 <Image style={{position:'center'}}size='medium' src="https://i.pinimg.com/originals/3b/f8/31/3bf831be4f2a10daa1969c0fc8ada789.jpg"/> 
             </Grid.Column>
             <Grid.Column textAlign='center' width={5}>

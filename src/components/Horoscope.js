@@ -1,19 +1,27 @@
-import React from "react";
+import React,{useState} from "react";
 import { getRandomHoroscope } from "../data/dailyHoroscope";
 import { Button, Form, Container, Divider, Label,Image, Header } from 'semantic-ui-react'
 
+
+
 function Horoscope (){
-    function handleClick() {
+    const [currentHoroscope, setCurrentHoroscope]= useState({Horoscope: ""})
+    console.log(currentHoroscope)
+    
+    function handleChange() {
         const randomHoroscope = getRandomHoroscope();
-        console.log("Horoscope", randomHoroscope)
-        
+        //   console.log("Horoscope", randomHoroscope)
+        setCurrentHoroscope(randomHoroscope)
     }
+      
     return(
         <div class="reviewSec">
+           <h1 class="title">DISCOVER YOUR DAILY ✨HOROSCOPE✨</h1>
+           <hr></hr>
            <Form >
             <Form.Field>
-                <label>Enter your sunsign</label>
-                <select >
+                <h3 class="label">Enter your SunSign</h3>
+                <select onChange={handleChange} >
                     <option> </option>
                     <option>Aries</option>
                     <option>Taurus</option>
@@ -28,13 +36,15 @@ function Horoscope (){
                     <option>Aquarius</option>
                     <option>Pisces</option>
                 </select>
-                <Button onClick={handleClick}> Search </Button>
+                
             </Form.Field>
+            <br></br>
+            <Container >   
+                <p class="descript">{currentHoroscope.Horoscope}</p>
+            </Container>
             </Form>
-            
-        
-
           
+        
         </div>
     )
 }

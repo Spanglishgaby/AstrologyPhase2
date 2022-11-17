@@ -1,27 +1,23 @@
 import {useState} from "react";
-import { Button, Comment, Form, Header, Container} from 'semantic-ui-react'
+import { Button, Comment, Form, Header, Container, Icon} from 'semantic-ui-react'
 
 function Reviews ({reviews, addReview}){
 
     const showReviews = reviews.map(reviewData => {
         return (
+    
             <Container >
                 <Comment >
-            <Comment.Avatar src='https://react.semantic-ui.com/images/avatar/small/matt.jpg' />
-            <Comment.Content>
-            <Comment.Author as='a'>{reviewData.name}</Comment.Author>
-            <Comment.Metadata>
-                <div>{reviewData.date}</div>
-            </Comment.Metadata>
-            <Comment.Text>{reviewData.review}
-            </Comment.Text>
-            <Comment.Actions>
-                <Comment.Action></Comment.Action>
-            </Comment.Actions>
-            </Comment.Content>
-            </Comment>
+                <Comment.Avatar src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6QTESaLQXNJDpokdt6XZd3CmvIevt1VKmGQ&usqp=CAU"/>
+                    <Comment.Content>
+                        <Comment.Author><p class="label">{reviewData.name}</p></Comment.Author>
+                        <Comment.Metadata class="metadata">
+                           <div>{reviewData.date}</div>
+                        </Comment.Metadata>         
+                        <Comment.Text ><p class="label">{reviewData.review}</p></Comment.Text>
+                    </Comment.Content>
+                </Comment>
             </Container>
-            
         )
     })
 
@@ -62,39 +58,31 @@ function Reviews ({reviews, addReview}){
     return (
         <div class="reviewSec">
             <Comment.Group style={{
-                marginTop: '30px',
-                marginBottom: '100px'
+                marginBottom: '30px'
             }}>
-                <Header color='yellow' as="h2" dividing >
-                    WEBSITE REVIEWS
-                </Header>
-                <> {showReviews}</>
-              
+                <h1 className="title" >
+                🌞WEBSITE REVIEWS🌝
+                </h1>
+                <hr></hr>
+                <br></br>
+                <div class="lable"> {showReviews}</div>
+            
                 <Form reply onSubmit={renderReview}>
                     <Form.Field onChange={handleInput2}>
-                    <label>Name:</label>
+                    <h5 class="label"> Name:</h5>
                     <input placeholder='First Name' />
                     </Form.Field>
-                    <label>Date:</label>
+                    <h5 class="label">Date:</h5>
                     <input onChange={handleInput3} type="date" id="start" name="trip-start"
                     value={Date}
                     min="2022-01-01" max="2025-12-31">
                     </input>
-                    <label>Comment:</label>
+                    <h5 class="label">Comment:</h5>
                     <Form.TextArea placeholder="Enter your review..." onChange = {handleInput}/>
-                    <Button color="violet" content='Add Review' labelPosition='left' icon='edit' primary />
+                    <Button color="violet" content='Add Review' labelPosition='left' icon='comments' />
                 </Form>
             </Comment.Group>
         </div>
-
-        // <div class="reviewSec">
-        //     <div id="showReview">{showReviews}</div>
-        //     {/* <div id="showReview"> HI</div> */}
-        //     <form onSubmit={renderReview}>
-        //     <textarea placeholder="Enter your review..." onChange = {handleInput}></textarea>
-        //     <button value = "submit">Add a review</button>
-        //     </form>
-        // </div>
     )
 
 }

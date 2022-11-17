@@ -18,7 +18,7 @@ const arrayOfHoroscope = [
         Horoscope:" It may be time to look at where you are in life. Are you where you thought you'd be? If so, congratulations. This is a real accomplishment. If not, take heart. Many people discover that they aren't anywhere close. The key is to write down solid goals and the steps needed to reach them. It's your life after all. Mapping out your route is up to you."
     },
     {
-        Horoscope:" If you're feeling irritable and wrung out today, it may be a result of putting far too much pressure on yourself. It might be wise to take a look at the expectations you have of yourself. Consider if you would you place the same demands on those closest to you. If the answer is no, it's time to revamp your life to suit the one you're closest to - you."
+        Horoscope:" If you're feeling irritable and wrung out today, it may be a result of putting far too much pressure on yourself. It might be wise to take a look at the expectations you have of yourself. Consider if you would you place the same demands on those closest to you. If the answer is no, it's time to revamp your life to suit the one you're closest to you."
     }
   ]
   

@@ -4,15 +4,10 @@ import { Button, Form, Container, Divider, Label, Grid } from 'semantic-ui-react
 function SignForm (){
     const [oneSign, setOneSign] = useState("");
     const [partnerSign, setPartnerSign] = useState("");
-    const [showResult, setShowResult] = useState(false)
     const [showMatch, setShowMatch] = useState(false)
+    const [currentMatch, setCurrentMatch]= useState({choose:""})
     // console.log(oneSign)
-
-    const handleClick= e =>{
-        e.preventDefault()
-        setShowResult(!showResult)
-    }
-
+  
     const togglePerfectMatch=()=>{
         setShowMatch(!showMatch)
         // console.log(showMatch)
@@ -22,7 +17,8 @@ function SignForm (){
         switch(oneSign){
             case "Aries":
                 return(
-                <>l
+                <>
+                <br></br>
                 <Label as='a' color='red' size="large"  image horizontal>
                     <img src={require("../images/leologo.jpg")}/> 
                         Leo
@@ -44,6 +40,7 @@ function SignForm (){
             case "Taurus":
                 return(
                 <>
+                   <br></br>
                 <Label as='a' color='brown' size="large"  image>
                     <img src={require("../images/virgologo.jpg")}/> 
                     Virgo
@@ -65,6 +62,7 @@ function SignForm (){
             case "Gemini":
                 return(
                 <>
+                   <br></br>
                 <Label as='a' color='blue' size="large"  image>
                     <img src={require("../images/libralogo.jpg")}/> 
                     Libra
@@ -86,6 +84,7 @@ function SignForm (){
             case "Cancer":
                 return(
                 <>
+                   <br></br>
                 <Label as='a' color='teal' size="large"  image>
                     <img src={require("../images/scorpiologo.jpg")}/> 
                     Scorpio
@@ -107,6 +106,7 @@ function SignForm (){
             case "Leo":
                 return(
                 <>
+                   <br></br>
                 <Label as='a' color='red' size="large"  image>
                     <img src={require("../images/arieslogo.jpg")}/> 
                     Aries
@@ -128,6 +128,7 @@ function SignForm (){
             case "Virgo":
                 return(
                 <>
+                   <br></br>
                 <Label as='a' color='brown' size="large"  image>
                     <img src={require("../images/tauruslogo.jpg")}/> 
                     Taurus
@@ -149,6 +150,7 @@ function SignForm (){
             case "Libra" :
                 return(
                 <>
+                   <br></br>
                 <Label as='a' color='blue' size="large"  image>
                     <img src={require("../images/geminilogo.jpg")}/> 
                     Gemini
@@ -170,6 +172,7 @@ function SignForm (){
             case "Scorpio":
                 return(
                 <>
+                   <br></br>
                 <Label as='a' color='teal' size="large"  image>
                     <img src={require("../images/cancerlogo.jpg")}/> 
                     Cancer
@@ -191,6 +194,7 @@ function SignForm (){
             case "Sagittarius":
                 return(
                 <>
+                   <br></br>
                 <Label as='a' color='red' size="large"  image>
                     <img src={require("../images/arieslogo.jpg")}/> 
                     Aries
@@ -212,6 +216,7 @@ function SignForm (){
             case "Capricorn":
                 return(
                 <>
+                   <br></br>
                 <Label as='a' color='brown' size="large"  image>
                     <img src={require("../images/tauruslogo.jpg")}/> 
                     Taurus
@@ -233,6 +238,7 @@ function SignForm (){
             case "Aquarius":
                 return(
                 <>
+                   <br></br>
                 <Label as='a' color='blue' size="large"  image>
                     <img src={require("../images/geminilogo.jpg")}/> 
                     Gemini
@@ -254,6 +260,7 @@ function SignForm (){
             case "Pisces":
                 return(
                 <>
+                   <br></br>
                 <Label as='a' color='teal' size="large"  image>
                     <img src={require("../images/cancerlogo.jpg")}/> 
                     Cancer
@@ -273,14 +280,20 @@ function SignForm (){
                 )
             break;
             default:
-                console.log( "You are the loved one!")
+               return (
+               <>
+               <br></br>
+               <Label color='yellow' size="huge">You are the loved one!</Label>
+               </>
+               )
              }
     }
+
     const arrayOfMatch = [
     {
        choose:`These two Signs admire one another's dedication and strength, but,
         while they have this in common as well as a dependable, realistic,
-        somewhat conservative approach to life (${oneSign} more than ${partnerSign}),
+        somewhat conservative approach to life ${oneSign} more than ${partnerSign}),
         a love relationship between them can go stale fast. The problem. They're
         actually rather different at their cores. ${partnerSign} may begin to find
         ${oneSign} too conservative and restrictive; ${oneSign} may start to
@@ -305,16 +318,24 @@ function SignForm (){
     const getRandomMatch =()=> {
         return arrayOfMatch[Math.floor(Math.random() * arrayOfMatch.length)]
     }
-    const renderMatch = getRandomMatch()
-    console.log(renderMatch)
+       
+    const handleClick= e =>{
+        e.preventDefault()
+        const renderMatch = getRandomMatch()
+        setCurrentMatch(renderMatch )
+    }
 
     return (
-        <div class="reviewSec">
-
+        <div class="reviewSec" >
+                 <h1 className="title" >
+                 💖 💌 LOVE COMPATIBILITY ❤️️💘
+                </h1>
+                <hr></hr>
+                <br></br>
         <Form onSubmit={handleClick}>
             <Form.Field>
-                <label>Enter your sunsign</label>
-                <select value= {oneSign} onChange={(e)=>setOneSign(e.target.value)} required>
+                <h4 class="label">Enter your sunsign</h4>
+                <select value= {oneSign} onChange={e=>{setOneSign(e.target.value)}} required>
                 {/* <select onChange={e=>{console.log(e.target.value)}}> */}
                     <option> </option>
                     <option>Aries</option>
@@ -332,7 +353,7 @@ function SignForm (){
                 </select>
             </Form.Field>
             <Form.Field>
-                <label>Enter your partner's sign</label>
+                <h4 class="label">Enter your partner's sign</h4>
                 <select value= {partnerSign} onChange={(e)=>setPartnerSign(e.target.value)} required>
                     <option> </option>
                     <option>Aries</option>
@@ -349,29 +370,26 @@ function SignForm (){
                     <option>Pisces</option>
                 </select>
             </Form.Field>
+            <br></br>
             <Button color = "violet" type='submit' >Find your SoulMate!</Button>
+            <br></br>
+            
         </Form>
-            {showResult ? (
-            <>
-                <Divider />
-                <Container class="ui container" textAlign='justified'>
-                    <p>
-                    
-                    {renderMatch}
-                
-                    </p>
-                </Container>
-            </>
-            ) : null}
-            {/* <Container>{renderMatch}</Container> */}
-            <Divider />
-            <div>
-                <Grid.Column>
-                <Button color = "pink" onClick={togglePerfectMatch}>FIND What's your perfect match?</Button>
-                 
-                    { showMatch ? <Container class="ui container" textAlign='justified'>{displayMatch()}</Container> : null }
-                </Grid.Column>   
-            </div>
+        <Container class="ui container" textAlign='justified'>
+        <br></br>
+            <p class="description">  
+            {currentMatch.choose}
+            </p>
+        </Container>
+        
+        <Divider />
+        <div>
+            <Grid.Column>
+            <Button color = "pink" onClick={togglePerfectMatch}>FIND What's your perfect match?</Button>  
+                { showMatch ? <Container class="ui container" textAlign='justified'>{displayMatch()}</Container> : null }
+            </Grid.Column>   
+            <br></br>
+        </div>
         </div>
     )
 

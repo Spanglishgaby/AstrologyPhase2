@@ -11,7 +11,8 @@
       "animal": "Sheep, and especially, rams.",
       "image": "../images/aries.png",
       "element": "fire",
-      "like":10
+      "like": 10,
+      "date": "March 21 - April 19"
     },
     {
       "id": 2,
@@ -24,7 +25,8 @@
       "animal": "Cattle",
       "image": "../images/taurus.png",
       "element": "earth",
-      "like":20
+      "like": 20,
+      "date": "April 20 - May 20"
     },
     {
       "id": 3,
@@ -37,7 +39,8 @@
       "animal": "Brightly colored birds and butterflies",
       "image": "../images/gemini.png",
       "element": "air",
-      "like":10
+      "like": 10,
+      "date": "May 21 - June 21"
     },
     {
       "id": 4,
@@ -50,7 +53,8 @@
       "animal": "Those with shell coverings",
       "image": "../images/cancer.png",
       "element": "water",
-      "like":30
+      "like": 30,
+      "date": "June 22 - July 22"
     },
     {
       "id": 5,
@@ -63,7 +67,8 @@
       "animal": "Those with shell coverings",
       "image": "../images/leo.png",
       "element": "fire",
-      "like":5
+      "like": 5,
+      "date": "July 23 - August 22"
     },
     {
       "id": 6,
@@ -76,7 +81,8 @@
       "animal": "Small domestic pets",
       "image": "../images/virgo.png",
       "element": "earth",
-      "like":3
+      "like": 3,
+      "date": "August 23 - September 22"
     },
     {
       "id": 7,
@@ -89,7 +95,8 @@
       "animal": "Snakes and Lizards",
       "image": "../images/libra.png",
       "element": "air",
-      "like":15
+      "like": 15,
+      "date": "September 23 - October 22"
     },
     {
       "id": 8,
@@ -102,7 +109,8 @@
       "animal": "Insects and crustaceans",
       "image": "../images/scorpio.png",
       "element": "water",
-      "like":11
+      "like": 11,
+      "date": "October 23 - November 21"
     },
     {
       "id": 9,
@@ -115,7 +123,8 @@
       "animal": "Horse",
       "image": "../images/sagittarius.png",
       "element": "fire",
-      "like":22
+      "like": 22,
+      "date": "November 22 - December 21"
     },
     {
       "id": 10,
@@ -128,7 +137,8 @@
       "animal": "Goats and animals with cloven hoofs",
       "image": "../images/capricorn.png",
       "element": "earth",
-      "like":24
+      "like": 24,
+      "date": "December 22 - January 19"
     },
     {
       "id": 11,
@@ -141,7 +151,8 @@
       "animal": "Large birds",
       "image": "../images/aquarius.png",
       "element": "air",
-      "like":8
+      "like": 8,
+      "date": "January 20 - February 18"
     },
     {
       "id": 12,
@@ -154,7 +165,8 @@
       "animal": "Fish",
       "image": "../images/pisces.png",
       "element": "water",
-      "like":12
+      "like": 12,
+      "date": "February 19 - March 20"
     }
   ],
   "reviews": [
@@ -162,55 +174,31 @@
       "id": 1,
       "name": "Gabriela Arnott",
       "review": "I love this page",
-      "date": "Nov. 14"
+      "date": "2022-11-13"
     },
     {
       "id": 2,
       "name": "Micheal",
       "review": "Def recommend this page!!!",
-      "date": "Nov. 14"
+      "date": "2022-11-14"
     },
     {
       "id": 3,
       "name": "Lianzi",
       "review": "Def recommend this page!!!",
-      "date": "Nov. 14"
+      "date": "2022-11-14"
     },
     {
       "id": 4,
       "name": "Betty",
       "review": "Def recommend this page!!!",
-      "date": "Nov. 14"
+      "date": "2022-11-14"
     },
     {
-      "name": "fake name",
-      "review": "how are you?\n",
-      "date": "Nov. 16",
+      "name": "Yuriko",
+      "review": "Love it!!",
+      "date": "2022-11-25",
       "id": 5
-    },
-    {
-      "name": "fake name",
-      "review": "",
-      "date": "Nov. 16",
-      "id": 6
-    },
-    {
-      "name": "yuriko",
-      "review": "testing",
-      "date": "Nov. 16",
-      "id": 7
-    },
-    {
-      "name": "Amparo",
-      "review": "Testing1",
-      "date": "2022-11-16",
-      "id": 8
-    },
-    {
-      "name": "Lianzi",
-      "review": "Testinggggg",
-      "date": "2022-11-15",
-      "id": 9
     }
   ],
   "Horoscope": {

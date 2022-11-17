@@ -13,9 +13,6 @@ function SignCard ({signData}){
     }
     // let cardImage = require(signData.image)
 
-    const toggleToday=()=>{
-      return  <Link to="/horoscope">horoscope</Link>
-    }
     const handleShowDetail=()=>{
         setShowDetail(!showDetail)
     }
@@ -40,9 +37,9 @@ function SignCard ({signData}){
             <Image onClick={handleShowDetail} src={require(`../images/${signData.sign.toLowerCase()}.png`)}  />
             <Card.Content>
               <Card.Header textAlign='center'>{signData.sign}</Card.Header>
-              {/* <Card.Meta>
-                <span className='date'>Joined in 2015</span>
-              </Card.Meta> */}
+              <Card.Meta textAlign='center'>
+                <span>{signData.date}</span>
+              </Card.Meta>
               <Card.Description textAlign='center'>
               <p><b>Lucky Day:</b> {signData.luckyDay}</p>
               </Card.Description>
@@ -50,9 +47,9 @@ function SignCard ({signData}){
             <CardContent textAlign='center'>
            
               <Button color="violet"  size='small' circular centered>
-                <Link to="/horoscope">
+                <a class="label" href="/horoscope">
                  Check Out Your Daily Horoscope 
-                </Link>
+                </a>
               </Button>
             </CardContent>
             <Card.Content extra>
@@ -68,18 +65,6 @@ function SignCard ({signData}){
    )
  }
 
-        // <div className="signCard">
-        //     <img src="null" alt ="name" />
-        //     <p>{signData.sign}</p>
-        //     <div>
-        //         <p>{signData.symbol}</p>
-        //         <p>{signData.planet}</p>
-        //         <p>{signData.luckDay}</p>
-        //         <p>{signData.color}</p>
-        //         <p>{signData.flower}</p>
-        //         <p>{signData.animal}</p>
-        //     </div>
-        // </div>
 
 
 
