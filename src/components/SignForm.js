@@ -7,12 +7,12 @@ function SignForm (){
     const [showMatch, setShowMatch] = useState(false)
     const [currentMatch, setCurrentMatch]= useState({choose:""})
     // console.log(oneSign)
-  
+
     const togglePerfectMatch=()=>{
         setShowMatch(!showMatch)
         // console.log(showMatch)
     }
-   
+
     const displayMatch=()=>{
         switch(oneSign){
             case "Aries":
@@ -20,19 +20,19 @@ function SignForm (){
                 <>
                 <br></br>
                 <Label as='a' color='red' size="large"  image horizontal>
-                    <img src={require("../images/leologo.jpg")}/> 
+                    <img src={require("../images/leologo.jpg")}/>
                         Leo
-                    <Label.Detail >fire</Label.Detail>  
+                    <Label.Detail >fire</Label.Detail>
                 </Label>
                 <Label as='a' color='red' size="large"  image horizontal>
-                    <img src={require("../images/sagittariuslogo.jpg")}/> 
+                    <img src={require("../images/sagittariuslogo.jpg")}/>
                     Sagittarius
-                    <Label.Detail >fire</Label.Detail>  
+                    <Label.Detail >fire</Label.Detail>
                 </Label>
                 <Label as='a' color='red' size="large"  image horizontal>
-                    <img src={require("../images/arieslogo.jpg")}/> 
+                    <img src={require("../images/arieslogo.jpg")}/>
                     Aries
-                    <Label.Detail >fire</Label.Detail>  
+                    <Label.Detail >fire</Label.Detail>
                 </Label>
                 </>
                 )
@@ -42,19 +42,19 @@ function SignForm (){
                 <>
                    <br></br>
                 <Label as='a' color='brown' size="large"  image>
-                    <img src={require("../images/virgologo.jpg")}/> 
+                    <img src={require("../images/virgologo.jpg")}/>
                     Virgo
-                    <Label.Detail>earth</Label.Detail>  
+                    <Label.Detail>earth</Label.Detail>
                 </Label>
                 <Label as='a' color='brown' size="large"  image>
-                    <img src={require("../images/capricornlogo.jpg")}/> 
+                    <img src={require("../images/capricornlogo.jpg")}/>
                     Capricorn
-                    <Label.Detail>earth</Label.Detail>  
+                    <Label.Detail>earth</Label.Detail>
                 </Label>
                 <Label as='a' color='brown' size="large"  image>
-                    <img src={require("../images/tauruslogo.jpg")}/> 
+                    <img src={require("../images/tauruslogo.jpg")}/>
                     Taurus
-                    <Label.Detail>earth</Label.Detail>  
+                    <Label.Detail>earth</Label.Detail>
                 </Label>
                 </>
                 )
@@ -64,19 +64,19 @@ function SignForm (){
                 <>
                    <br></br>
                 <Label as='a' color='blue' size="large"  image>
-                    <img src={require("../images/libralogo.jpg")}/> 
+                    <img src={require("../images/libralogo.jpg")}/>
                     Libra
-                    <Label.Detail>air</Label.Detail>  
+                    <Label.Detail>air</Label.Detail>
                 </Label>
                 <Label as='a' color='blue' size="large"  image>
-                    <img src={require("../images/aquariuslogo.jpg")}/> 
+                    <img src={require("../images/aquariuslogo.jpg")}/>
                     Aquarius
-                    <Label.Detail>air</Label.Detail>  
+                    <Label.Detail>air</Label.Detail>
                 </Label>
                 <Label as='a' color='blue' size="large"  image>
-                    <img src={require("../images/geminilogo.jpg")}/> 
+                    <img src={require("../images/geminilogo.jpg")}/>
                     Gemini
-                    <Label.Detail>air</Label.Detail>  
+                    <Label.Detail>air</Label.Detail>
                 </Label>
                 </>
                 )
@@ -86,17 +86,17 @@ function SignForm (){
                 <>
                    <br></br>
                 <Label as='a' color='teal' size="large"  image>
-                    <img src={require("../images/scorpiologo.jpg")}/> 
+                    <img src={require("../images/scorpiologo.jpg")}/>
                     Scorpio
                 <Label.Detail>water</Label.Detail>
                 </Label>
                 <Label as='a' color='teal' size="large"  image>
-                    <img src={require("../images/pisceslogo.jpg")}/> 
+                    <img src={require("../images/pisceslogo.jpg")}/>
                     Pisces
                 <Label.Detail>water</Label.Detail>
                 </Label>
                 <Label as='a' color='teal' size="large"  image>
-                    <img src={require("../images/cancerlogo.jpg")}/> 
+                    <img src={require("../images/cancerlogo.jpg")}/>
                     Cancer
                 <Label.Detail>water</Label.Detail>
                 </Label>
@@ -108,19 +108,19 @@ function SignForm (){
                 <>
                    <br></br>
                 <Label as='a' color='red' size="large"  image>
-                    <img src={require("../images/arieslogo.jpg")}/> 
+                    <img src={require("../images/arieslogo.jpg")}/>
                     Aries
-                    <Label.Detail >fire</Label.Detail>  
+                    <Label.Detail >fire</Label.Detail>
                 </Label>
                 <Label as='a' color='red' size="large"  image>
-                    <img src={require("../images/sagittariuslogo.jpg")}/> 
+                    <img src={require("../images/sagittariuslogo.jpg")}/>
                     Sagittarius
-                    <Label.Detail >fire</Label.Detail>  
+                    <Label.Detail >fire</Label.Detail>
                 </Label>
                 <Label as='a' color='red' size="large"  image>
-                    <img src={require("../images/leologo.jpg")}/> 
+                    <img src={require("../images/leologo.jpg")}/>
                         Leo
-                    <Label.Detail >fire</Label.Detail>  
+                    <Label.Detail >fire</Label.Detail>
                 </Label>
                 </>
                 )
@@ -130,19 +130,19 @@ function SignForm (){
                 <>
                    <br></br>
                 <Label as='a' color='brown' size="large"  image>
-                    <img src={require("../images/tauruslogo.jpg")}/> 
+                    <img src={require("../images/tauruslogo.jpg")}/>
                     Taurus
-                    <Label.Detail >earth</Label.Detail>  
+                    <Label.Detail >earth</Label.Detail>
                 </Label>
                 <Label as='a' color='brown' size="large"  image>
-                    <img src={require("../images/capricornlogo.jpg")}/> 
+                    <img src={require("../images/capricornlogo.jpg")}/>
                     Capricorn
-                    <Label.Detail >earth</Label.Detail>  
+                    <Label.Detail >earth</Label.Detail>
                 </Label>
                 <Label as='a' color='brown' size="large"  image>
-                    <img src={require("../images/virgologo.jpg")}/> 
+                    <img src={require("../images/virgologo.jpg")}/>
                     Virgo
-                    <Label.Detail >earth</Label.Detail>  
+                    <Label.Detail >earth</Label.Detail>
                 </Label>
                 </>
                 )
@@ -152,19 +152,19 @@ function SignForm (){
                 <>
                    <br></br>
                 <Label as='a' color='blue' size="large"  image>
-                    <img src={require("../images/geminilogo.jpg")}/> 
+                    <img src={require("../images/geminilogo.jpg")}/>
                     Gemini
-                    <Label.Detail>air</Label.Detail>  
+                    <Label.Detail>air</Label.Detail>
                 </Label>
                 <Label as='a' color='blue' size="large"  image>
-                    <img src={require("../images/aquariuslogo.jpg")}/> 
+                    <img src={require("../images/aquariuslogo.jpg")}/>
                     Aquarius
-                    <Label.Detail>air</Label.Detail>  
+                    <Label.Detail>air</Label.Detail>
                 </Label>
                 <Label as='a' color='blue' size="large"  image>
-                    <img src={require("../images/libralogo.jpg")}/> 
+                    <img src={require("../images/libralogo.jpg")}/>
                     Libra
-                    <Label.Detail>air</Label.Detail>  
+                    <Label.Detail>air</Label.Detail>
                 </Label>
                 </>
                 )
@@ -174,17 +174,17 @@ function SignForm (){
                 <>
                    <br></br>
                 <Label as='a' color='teal' size="large"  image>
-                    <img src={require("../images/cancerlogo.jpg")}/> 
+                    <img src={require("../images/cancerlogo.jpg")}/>
                     Cancer
                 <Label.Detail>water</Label.Detail>
                 </Label>
                 <Label as='a' color='teal' size="large"  image>
-                    <img src={require("../images/pisceslogo.jpg")}/> 
+                    <img src={require("../images/pisceslogo.jpg")}/>
                     Pisces
                 <Label.Detail>water</Label.Detail>
                 </Label>
                 <Label as='a' color='teal' size="large"  image>
-                    <img src={require("../images/scorpiologo.jpg")}/> 
+                    <img src={require("../images/scorpiologo.jpg")}/>
                     Scorpio
                 <Label.Detail>water</Label.Detail>
                 </Label>
@@ -196,19 +196,19 @@ function SignForm (){
                 <>
                    <br></br>
                 <Label as='a' color='red' size="large"  image>
-                    <img src={require("../images/arieslogo.jpg")}/> 
+                    <img src={require("../images/arieslogo.jpg")}/>
                     Aries
-                    <Label.Detail >fire</Label.Detail>  
+                    <Label.Detail >fire</Label.Detail>
                 </Label>
                 <Label as='a' color='red' size="large"  image>
-                    <img src={require("../images/leologo.jpg")}/> 
+                    <img src={require("../images/leologo.jpg")}/>
                         Leo
-                    <Label.Detail >fire</Label.Detail>  
+                    <Label.Detail >fire</Label.Detail>
                 </Label>
                 <Label as='a' color='red' size="large"  image>
-                    <img src={require("../images/sagittariuslogo.jpg")}/> 
+                    <img src={require("../images/sagittariuslogo.jpg")}/>
                     Sagittarius
-                    <Label.Detail >fire</Label.Detail>  
+                    <Label.Detail >fire</Label.Detail>
                 </Label>
                 </>
                 )
@@ -218,19 +218,19 @@ function SignForm (){
                 <>
                    <br></br>
                 <Label as='a' color='brown' size="large"  image>
-                    <img src={require("../images/tauruslogo.jpg")}/> 
+                    <img src={require("../images/tauruslogo.jpg")}/>
                     Taurus
-                    <Label.Detail >earth</Label.Detail>  
+                    <Label.Detail >earth</Label.Detail>
                 </Label>
                 <Label as='a' color='brown' size="large"  image>
-                    <img src={require("../images/virgologo.jpg")}/> 
+                    <img src={require("../images/virgologo.jpg")}/>
                     Virgo
-                    <Label.Detail >earth</Label.Detail>  
+                    <Label.Detail >earth</Label.Detail>
                 </Label>
                 <Label as='a' color='brown' size="large"  image>
-                    <img src={require("../images/capricornlogo.jpg")}/> 
+                    <img src={require("../images/capricornlogo.jpg")}/>
                     Capricorn
-                    <Label.Detail >earth</Label.Detail>  
+                    <Label.Detail >earth</Label.Detail>
                 </Label>
                 </>
                 )
@@ -240,19 +240,19 @@ function SignForm (){
                 <>
                    <br></br>
                 <Label as='a' color='blue' size="large"  image>
-                    <img src={require("../images/geminilogo.jpg")}/> 
+                    <img src={require("../images/geminilogo.jpg")}/>
                     Gemini
-                    <Label.Detail>air</Label.Detail>  
+                    <Label.Detail>air</Label.Detail>
                 </Label>
                 <Label as='a' color='blue' size="large"  image>
-                    <img src={require("../images/libralogo.jpg")}/> 
+                    <img src={require("../images/libralogo.jpg")}/>
                     Libra
-                    <Label.Detail>air</Label.Detail>  
+                    <Label.Detail>air</Label.Detail>
                 </Label>
                 <Label as='a' color='blue' size="large"  image>
-                    <img src={require("../images/aquariuslogo.jpg")}/> 
+                    <img src={require("../images/aquariuslogo.jpg")}/>
                     Aquarius
-                    <Label.Detail>air</Label.Detail>  
+                    <Label.Detail>air</Label.Detail>
                 </Label>
                 </>
             )
@@ -262,17 +262,17 @@ function SignForm (){
                 <>
                    <br></br>
                 <Label as='a' color='teal' size="large"  image>
-                    <img src={require("../images/cancerlogo.jpg")}/> 
+                    <img src={require("../images/cancerlogo.jpg")}/>
                     Cancer
-                <Label.Detail>water</Label.Detail>  
+                <Label.Detail>water</Label.Detail>
                 </Label>
                 <Label as='a' color='teal' size="large"  image>
-                    <img src={require("../images/scorpiologo.jpg")}/> 
+                    <img src={require("../images/scorpiologo.jpg")}/>
                     Scorpio
                 <Label.Detail>water</Label.Detail>
                 </Label>
                 <Label as='a' color='teal' size="large"  image>
-                    <img src={require("../images/pisceslogo.jpg")}/> 
+                    <img src={require("../images/pisceslogo.jpg")}/>
                     Pisces
                 <Label.Detail>water</Label.Detail>
                 </Label>
@@ -305,20 +305,20 @@ function SignForm (){
        choose:`${oneSign} is a more cautious, rational outlook on life, while ${partnerSign} is insatiable,
         fostering an idealistic approach to nearly everything. On the surface, they may seem like total
         opposites, but once these two set eyes on one another, an unbreakable bond is formed. On the surface,
-        they may seem like total opposites, but once these two set eyes on one another, an unbreakable bond 
-        is formed. Both ${oneSign} and ${partnerSign} can be opinionated to the point of seeming unwilling to 
+        they may seem like total opposites, but once these two set eyes on one another, an unbreakable bond
+        is formed. Both ${oneSign} and ${partnerSign} can be opinionated to the point of seeming unwilling to
         compromise. ${oneSign} thrives on organization and is always looking for consequences. ${partnerSign}
-        is modern and finds routine troublesome and boring. ${oneSign} will find wonder in Aquarius, but may 
+        is modern and finds routine troublesome and boring. ${oneSign} will find wonder in Aquarius, but may
         get frustrated trying to find a stitch of logic in their partner's desultory, mystical mind. Aquarius
-        will not appreciate the domineering streak in their partner, but will find the solid base that ${oneSign} 
-        provides to be a great support and will be relieved that someone will help them to take care of their 
-        personal matters.` 
+        will not appreciate the domineering streak in their partner, but will find the solid base that ${oneSign}
+        provides to be a great support and will be relieved that someone will help them to take care of their
+        personal matters.`
     }
     ]
     const getRandomMatch =()=> {
         return arrayOfMatch[Math.floor(Math.random() * arrayOfMatch.length)]
     }
-       
+
     const handleClick= e =>{
         e.preventDefault()
         const renderMatch = getRandomMatch()
@@ -373,21 +373,21 @@ function SignForm (){
             <br></br>
             <Button color = "violet" type='submit' >Find your SoulMate!</Button>
             <br></br>
-            
+
         </Form>
         <Container class="ui container" textAlign='justified'>
         <br></br>
-            <p class="description">  
+            <p class="description">
             {currentMatch.choose}
             </p>
         </Container>
-        
+
         <Divider />
         <div>
             <Grid.Column>
-            <Button color = "pink" onClick={togglePerfectMatch}>FIND What's your perfect match?</Button>  
+            <Button color = "pink" onClick={togglePerfectMatch}>FIND your perfect match?</Button>
                 { showMatch ? <Container class="ui container" textAlign='justified'>{displayMatch()}</Container> : null }
-            </Grid.Column>   
+            </Grid.Column>
             <br></br>
         </div>
         </div>
