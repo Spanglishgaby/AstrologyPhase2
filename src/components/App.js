@@ -5,6 +5,7 @@ import HeaderPage from './HeaderPage'
 import Reviews from "./Reviews";
 import SignForm from "./SignForm";
 import SignCollection from "./SignCollection";
+import ErrorPage from './Error';
 import 'semantic-ui-css/semantic.min.css'
 import { Switch, Route} from 'react-router-dom';
 import Footer from './Footer';
@@ -40,7 +41,6 @@ function App() {
           <HeaderPage />
           <SignCollection sunSign={sunSign} />
         </Route>
-     
         <Route exact path = '/sunsign'>
           <SignCollection sunSign={sunSign} />
         </Route>
@@ -54,7 +54,7 @@ function App() {
           <Reviews reviews={reviews} addReview={addReview} />
         </Route>
         <Route path = "*">
-          <h1> 404 not found</h1>
+          <ErrorPage/>
         </Route>
     </Switch>
     <Footer/>
